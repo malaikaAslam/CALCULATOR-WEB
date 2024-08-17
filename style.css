@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+
+    
+#display{
+    width: 88%;
+    margin-top: 30px;
+   background-color: #222;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+::placeholder{
+    color: #fff;
+}
+#display:hover{
+    cursor: text;
+}
+
+
+.container{
+background-color:black;
+ width: 350px;
+ height: 480px;
+ 
+}
+
+.calculator{
+   display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 30px;
+    
+     }
+button{
+    font-size: 19px;
+    text-align: center;
+    width:50px ;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 15px;
+    font-weight: 500;
+    background-color: #2f2f2f;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s, transform 0.2s;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3),
+    inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+    
+  }
+ 
+  button:hover{
+    background: linear-gradient(to bottom, #555, #111);
+    transform: translateY(-2px);
+  }
+
+
+  .container .sign{
+    background-color: orange;
+    color: #2f2f2f;
+    font-size: 25px;
+    font-weight: 400;
+    background: linear-gradient(to bottom, #FFD700, #FFA500);
+    
+  }
